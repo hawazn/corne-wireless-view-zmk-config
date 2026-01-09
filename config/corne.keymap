@@ -73,10 +73,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB    &kp Q            &kp W            &kp E                &kp R                   &kp T    &kp Y    &kp U                    &kp I                 &kp O             &kp P                     &kp BSPC
-&kp LCTRL  &HML LEFT_WIN A  &HML LEFT_ALT S  &HML LEFT_CONTROL D  &hmshiftL LEFT_SHIFT F  &kp G    &kp H    &hmshiftR RIGHT_SHIFT J  &HMR RIGHT_CONTROL K  &HMR RIGHT_ALT L  &HMR RIGHT_WIN SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z            &kp X            &kp C                &kp V                   &kp B    &kp N    &kp M                    &kp COMMA             &kp DOT           &kp FSLH                  &kp ESC
-                                             &kp DELETE           &mo 1                   &mo 2    &kp RET  &kp SPACE                &mo 2
+&kp TAB    &kp Q            &kp W            &kp E                     &kp R                   &kp T    &kp Y    &kp U                    &kp I                      &kp O             &kp P                     &kp BSPC
+&kp LCTRL  &HML LEFT_WIN A  &HML LEFT_ALT S  &hmshiftL LEFT_CONTROL D  &hmshiftL LEFT_SHIFT F  &kp G    &kp H    &hmshiftR RIGHT_SHIFT J  &hmshiftR RIGHT_CONTROL K  &HMR RIGHT_ALT L  &HMR RIGHT_WIN SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z            &kp X            &kp C                     &kp V                   &kp B    &kp N    &kp M                    &kp COMMA                  &kp DOT           &kp FSLH                  &kp ESC
+                                             &kp DELETE                &mo 1                   &mo 2    &kp RET  &kp SPACE                &mo 2
             >;
         };
 
@@ -89,10 +89,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp TAB           &kp N1      &kp N2            &kp N3             &kp N4           &kp N5        &kp N6     &kp N7          &kp N8  &kp N9          &kp N0     &kp BSPC
-&kp LEFT_CONTROL  &kp C_MUTE  &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp DELETE    &kp MINUS  &kp LEFT_ARROW  &kp UP  &kp DOWN_ARROW  &kp RIGHT  &kp F12
-&kp LSHFT         &kp F1      &kp F2            &kp F3             &kp F4           &kp F5        &kp F6     &kp F7          &kp F8  &kp F9          &kp F10    &kp F11
-                                                &trans             &trans           &trans        &trans     &trans          &trans
+&kp TAB           &kp N1      &kp N2            &kp N3                                &kp N4                            &kp N5        &kp N6     &kp N7          &kp N8  &kp N9          &kp N0     &kp BSPC
+&kp LEFT_CONTROL  &kp C_MUTE  &kp C_PLAY_PAUSE  &hmshiftL LEFT_CONTROL C_VOLUME_DOWN  &hmshiftL LEFT_SHIFT C_VOLUME_UP  &kp DELETE    &kp MINUS  &kp LEFT_ARROW  &kp UP  &kp DOWN_ARROW  &kp RIGHT  &kp F12
+&kp LSHFT         &kp F1      &kp F2            &kp F3                                &kp F4                            &kp F5        &kp F6     &kp F7          &kp F8  &kp F9          &kp F10    &kp F11
+                                                &trans                                &trans                            &trans        &trans     &trans          &trans
             >;
         };
 
