@@ -59,6 +59,28 @@
             flavor = "tap-preferred";
             require-prior-idle-ms = <100>;
         };
+
+        RHMv2: RHMv2 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RHMV2";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+        };
+
+        LHMv2: LHMv2 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LHMV2";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
+        };
     };
 
     keymap {
@@ -73,10 +95,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E                &kp R                   &kp T    &kp Y    &kp U                    &kp I                 &kp O             &kp P                     &kp BSPC
-&kp LCTRL  &kp B  &kp S  &HML LEFT_CONTROL D  &hmshiftL LEFT_SHIFT F  &kp G    &kp H    &hmshiftR RIGHT_SHIFT J  &HMR RIGHT_CONTROL K  &HMR RIGHT_ALT L  &HMR RIGHT_WIN SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C                &kp V                   &kp B    &kp N    &kp M                    &kp COMMA             &kp DOT           &kp FSLH                  &kp ESC
-                         &kp DELETE           &mo 1                   &mo 2    &kp RET  &kp SPACE                &mo 2
+&kp TAB    &kp Q          &kp W              &kp E                &kp R                   &kp T    &kp Y    &kp U                    &kp I                 &kp O               &kp P                       &kp BSPC
+&kp LCTRL  &LHMv2 RCMD A  &LHMv2 LEFT_ALT S  &HML LEFT_CONTROL D  &hmshiftL LEFT_SHIFT F  &kp G    &kp H    &hmshiftR RIGHT_SHIFT J  &HMR RIGHT_CONTROL K  &RHMv2 RIGHT_ALT L  &RHMv2 RIGHT_WIN SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z          &kp X              &kp C                &kp V                   &kp B    &kp N    &kp M                    &kp COMMA             &kp DOT             &kp FSLH                    &kp ESC
+                                             &kp DELETE           &mo 1                   &mo 2    &kp RET  &kp SPACE                &mo 2
             >;
         };
 
